@@ -1,0 +1,29 @@
+[
+	{
+		"args": null,
+		"command": "set_mark"
+	},
+	{
+		"args": {
+			"excepts": ["current"],
+			"methods": "/^test_/"
+		},
+		"command": "select_methods"
+	},
+	{
+		"args": {"block": false},
+		"command": "toggle_comment"
+	},
+	{
+		"args": {"block": false},
+		"command": "toggle_bookmark"
+	},
+	{
+	   "command": "next_bookmark",
+	   "args": {"name": "mark"},
+	},
+	{
+	   "command": "clear_bookmarks",
+	   "args": {"name": "mark"}
+	}
+]

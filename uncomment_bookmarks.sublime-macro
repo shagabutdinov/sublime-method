@@ -1,0 +1,26 @@
+[
+	{
+		"args": null,
+		"command": "set_mark"
+	},
+	{
+		"args": null,
+		"command": "select_all_bookmarks"
+	},
+	{
+		"args": {"block": false},
+		"command": "toggle_comment"
+	},
+	{
+		"args": {"block": false},
+		"command": "toggle_bookmark"
+	},
+	{
+	   "command": "next_bookmark",
+	   "args": {"name": "mark"},
+	},
+	{
+	   "command": "clear_bookmarks",
+	   "args": {"name": "mark"}
+	}
+]
