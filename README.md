@@ -7,8 +7,8 @@ repo.
 Warning
 -------
 
-Plugin is beta. Documentation is incomplete. You can help improve the plugin by
-sending a pull request.
+Plugin is beta. Documentation is incomplete. Currently works only with ruby.
+You can help improve the plugin by sending a pull request.
 
 Features
 --------
@@ -82,7 +82,8 @@ Supported values for methods, method, excepts and index variables:
 Configuration
 -------------
 
-This is my preferred completion configuration. Add it to your ".sublime-keymap" to start using the plugin.
+This is my preferred completion configuration. Add it to your ".sublime-keymap"
+to start using the plugin.
 
     {"keys": ["ctrl+m", "ctrl+."], "command": "create_method",
       "args": {"index": "current", "after": true}},
