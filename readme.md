@@ -186,3 +186,10 @@ complete command list.
 | Select current method body   | ctrl+m, s         | Method: Select current method body   |
 | Comment all except current   | ctrl+m, ctrl+q    | Method: Comment all except current   |
 | Uncomment all                | ctrl+m, q         | Method: Uncomment all                |
+
+
+### Dependencies
+
+https://github.com/shagabutdinov/sublime-statement
+https://github.com/shagabutdinov/sublime-expression
+https://github.com/shagabutdinov/sublime-local-variable
