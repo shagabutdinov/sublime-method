@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+$1 = @$name($args)
+if $1 != null:
+  ${result} = $1
+]]></content>
+  <scope>source.coffee</scope>
+  <description>Call coffee method (with null)</description>
+</snippet>

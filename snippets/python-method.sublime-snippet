@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+def $name(self, $args):
+	$body$0
+]]></content>
+	<scope>source.python</scope>
+	<description>Define python method</description>
+</snippet>

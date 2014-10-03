@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+$1 = $name($args)
+if $1 != nil:
+  ${result} = $1
+]]></content>
+  <scope>source.ruby</scope>
+  <description>Call ruby method (null result)</description>
+</snippet>

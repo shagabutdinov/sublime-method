@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+${result}@$name($args)
+]]></content>
+  <scope>source.coffee</scope>
+  <description>Call coffee method</description>
+</snippet>

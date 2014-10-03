@@ -1,0 +1,220 @@
+[
+
+  {
+    "caption": "Method: Create method before current",
+    "command": "create_method",
+    "args": {
+      "index": "current"
+    }
+  },
+
+  {
+    "caption": "Method: Create method after current",
+    "command": "create_method",
+    "args": {
+      "index": "current",
+      "after": true
+    }
+  },
+
+  {
+    "caption": "Method: Create method after current",
+    "command": "create_method",
+    "args": {
+      "index": "current",
+      "after": true
+    }
+  },
+
+  {
+    "caption": "Method: Create method after first",
+    "command": "create_method",
+    "args": {
+      "index": 1
+    }
+  },
+
+  {
+    "caption": "Method: Create protected method",
+    "command": "create_method",
+    "args": {
+      "index": "protected"
+    }
+  },
+
+  {
+    "caption": "Method: Create private method",
+    "command": "create_method",
+    "args": {
+      "index": "private"
+    }
+  },
+
+  {
+    "caption": "Method: Create method after last",
+    "command": "create_method",
+    "args": {
+      "index": "last",
+      "after": true
+    }
+  },
+
+  {
+    "caption": "Method: Move method after first",
+    "command": "move_method",
+    "args": {
+      "index": 0,
+      "after": true,
+    }
+  },
+
+  {
+    "caption": "Method: Move method to protected",
+    "command": "move_method",
+    "args": {
+      "index": "protected"
+    }
+  },
+
+  {
+    "caption": "Method: Move method to private",
+    "command": "move_method",
+    "args": {
+      "index": "private"
+    }
+  },
+
+  {
+    "caption": "Method: Move method to last",
+    "command": "move_method",
+    "args": {
+      "index": "last",
+      "after": true
+    }
+  },
+
+  {
+    "caption": "Method: Move method up",
+    "command": "move_method",
+    "args": {
+      "index": "-1"
+    }
+  },
+
+  {
+    "caption": "Method: Move method down",
+    "command": "move_method",
+    "args": {
+      "index": "+1",
+      "after": true
+    }
+  },
+
+  {
+    "caption": "Method: Go to next method",
+    "command": "goto_method",
+    "args": {
+      "method": "+1"
+    }
+  },
+
+  {
+    "caption": "Method: Go to previous method",
+    "command": "goto_method",
+    "args": {
+      "method": "-1"
+    }
+  },
+
+  {
+    "caption": "Method: Swap method start/end",
+    "command": "goto_method",
+    "args": {
+      "method": "current",
+      "position": "swap"
+    }
+  },
+
+  {
+    "caption": "Method: Go to last method",
+    "command": "goto_method",
+    "args": {
+      "method": "last"
+    }
+  },
+
+  {
+    "caption": "Method: Go to first method",
+    "command": "goto_method",
+    "args": {
+      "method": "0"
+    }
+  },
+
+  {
+    "caption": "Method: Create method space",
+    "command": "create_method_space",
+    "args": {
+      "index": "current",
+      "after": true
+    }
+  },
+
+  {
+    "caption": "Method: Delete method",
+    "command": "delete_method",
+    "args": {
+      "method": "current"
+    }
+  },
+
+  {
+    "caption": "Method: Clone method",
+    "command": "clone_method",
+    "args": {
+      "index": "current",
+      "after": true
+    }
+  },
+
+  {
+    "caption": "Method: Insert method name to mark",
+    "command": "insert_method_name_to_mark",
+    "args": {}
+  },
+
+  {
+    "caption": "Method: Select current method",
+    "command": "select_methods",
+    "args": {
+      "methods": "current"
+    }
+  },
+
+  {
+    "caption": "Method: Select current method body",
+    "command": "select_methods",
+    "args": {
+      "methods": "current",
+      "body": true
+    }
+  },
+
+  {
+    "caption": "Method: Comment all except current",
+    "command": "run_macro_file",
+    "args":
+    {
+      "file": "res://Packages/Method/leave_only_current_test.sublime-macro"
+    }
+  },
+
+  {
+    "caption": "Method: Uncomment all",
+    "command": "run_macro_file",
+    "args":
+    {
+      "file": "res://Packages/Method/uncomment_bookmarks.sublime-macro"
+    }
+  },
+]

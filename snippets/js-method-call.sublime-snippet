@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+${result}this.$name($args)
+]]></content>
+  <scope>source.js</scope>
+  <description>Call js method</description>
+</snippet>

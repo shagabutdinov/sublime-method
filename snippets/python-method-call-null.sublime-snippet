@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+$1 = self.$name($args)
+if $1 != None:
+  ${result} = $1
+]]></content>
+  <scope>source.python</scope>
+  <description>Call python method (with null)</description>
+</snippet>

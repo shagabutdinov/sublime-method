@@ -1,0 +1,220 @@
+[
+
+  {
+    "keys": ["ctrl+m", "ctrl+,"],
+    "command": "create_method",
+    "args": {
+      "index": "current"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+."],
+    "command": "create_method",
+    "args": {
+      "index": "current",
+      "after": true
+    }
+  },
+
+  {
+    "keys": ["ctrl+alt+shift+n"],
+    "command": "create_method",
+    "args": {
+      "index": "current",
+      "after": true
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+0"],
+    "command": "create_method",
+    "args": {
+      "index": 1
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+o"],
+    "command": "create_method",
+    "args": {
+      "index": "protected"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+i"],
+    "command": "create_method",
+    "args": {
+      "index": "private"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+l"],
+    "command": "create_method",
+    "args": {
+      "index": "last",
+      "after": true
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "0"],
+    "command": "move_method",
+    "args": {
+      "index": 0,
+      "after": true,
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "o"],
+    "command": "move_method",
+    "args": {
+      "index": "protected"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "i"],
+    "command": "move_method",
+    "args": {
+      "index": "private"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "l"],
+    "command": "move_method",
+    "args": {
+      "index": "last",
+      "after": true
+    }
+  },
+
+  {
+    "keys": ["alt+-"],
+    "command": "move_method",
+    "args": {
+      "index": "-1"
+    }
+  },
+
+  {
+    "keys": ["alt+="],
+    "command": "move_method",
+    "args": {
+      "index": "+1",
+      "after": true
+    }
+  },
+
+  {
+    "keys": ["alt+n"],
+    "command": "goto_method",
+    "args": {
+      "method": "+1"
+    }
+  },
+
+  {
+    "keys": ["alt+shift+n"],
+    "command": "goto_method",
+    "args": {
+      "method": "-1"
+    }
+  },
+
+  {
+    "keys": ["alt+ctrl+n"],
+    "command": "goto_method",
+    "args": {
+      "method": "current",
+      "position": "swap"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+/"],
+    "command": "goto_method",
+    "args": {
+      "method": "last"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+f"],
+    "command": "goto_method",
+    "args": {
+      "method": "0"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+n"],
+    "command": "create_method_space",
+    "args": {
+      "index": "current",
+      "after": true
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+d"],
+    "command": "delete_method",
+    "args": {
+      "method": "current"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+c"],
+    "command": "clone_method",
+    "args": {
+      "index": "current",
+      "after": true
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+m"],
+    "command": "insert_method_name_to_mark",
+    "args": {}
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+s"],
+    "command": "select_methods",
+    "args": {
+      "methods": "current"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "s"],
+    "command": "select_methods",
+    "args": {
+      "methods": "current",
+      "body": true
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+q"],
+    "command": "run_macro_file",
+    "args":
+    {
+      "file": "res://Packages/Method/leave_only_current_test.sublime-macro"
+    }
+  },
+
+  {
+    "keys": ["ctrl+m", "q"],
+    "command": "run_macro_file",
+    "args":
+    {
+      "file": "res://Packages/Method/uncomment_bookmarks.sublime-macro"
+    }
+  },
+]

@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+${result}$name($args)
+]]></content>
+  <scope>source.ruby</scope>
+  <description>Call ruby method</description>
+</snippet>
