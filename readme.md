@@ -7,6 +7,9 @@ manipulation in file.
 
 ![Demo](https://raw.github.com/shagabutdinov/sublime-method/master/demo/demo.gif "Demo")
 
+Direct link: https://raw.github.com/shagabutdinov/sublime-method/master/demo/demo.gif
+(for some strange reason github cached demo aggressevly and it can't be viewed
+directly now)
 
 ### Installation
 
