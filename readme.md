@@ -190,6 +190,6 @@ complete command list.
 
 ### Dependencies
 
-https://github.com/shagabutdinov/sublime-statement
-https://github.com/shagabutdinov/sublime-expression
-https://github.com/shagabutdinov/sublime-local-variable
+- https://github.com/shagabutdinov/sublime-statement
+- https://github.com/shagabutdinov/sublime-expression
+- https://github.com/shagabutdinov/sublime-local-variable
