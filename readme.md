@@ -5,11 +5,8 @@ manipulation in file.
 
 ### Demo
 
-![Demo](https://raw.github.com/shagabutdinov/sublime-method/master/demo/demo.gif "Demo")
+![Demo](https://github.com/shagabutdinov/sublime-method/raw/master/demo/demo.gif "Demo")
 
-Direct link: https://raw.github.com/shagabutdinov/sublime-method/master/demo/demo.gif
-(for some strange reason github cached demo aggressevly and it can't be viewed
-directly now)
 
 ### Installation
 
