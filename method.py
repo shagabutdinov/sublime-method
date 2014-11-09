@@ -1,9 +1,17 @@
 import sublime
 import sublime_plugin
 import re
-from Expression import expression
 
 from xml.dom import minidom
+
+try:
+  from Expression import expression
+except ImportError:
+  sublime.error_message("Dependency import failed; please read readme for " +
+   "Method plugin for installation instructions; to disable this " +
+   "message remove this plugin")
+
+
 
 indented_languages = ['python', 'coffee', 'saas']
 

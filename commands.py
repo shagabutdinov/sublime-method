@@ -3,9 +3,17 @@ import sublime_plugin
 import re
 
 from Method import method as parser
-from Statement import statement
-from Expression import expression
-from LocalVariable import local_variable
+
+try:
+  from Statement import statement
+  from Expression import expression
+  from LocalVariable import local_variable
+except ImportError:
+  sublime.error_message("Dependency import failed; please read readme for " +
+   "Method plugin for installation instructions; to disable this " +
+   "message remove this plugin")
+
+
 
 class MethodBase(sublime_plugin.TextCommand):
 

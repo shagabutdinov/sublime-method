@@ -5,7 +5,7 @@ manipulation in file.
 
 ### Demo
 
-![Demo](https://github.com/shagabutdinov/sublime-method/raw/master/demo/demo.gif "Demo")
+![Demo](https://github.com/shagabutdinov/sublime-enhanced-demos/raw/master/method.gif "Demo")
 
 
 ### Installation
@@ -190,6 +190,6 @@ complete command list.
 
 ### Dependencies
 
-- https://github.com/shagabutdinov/sublime-statement
-- https://github.com/shagabutdinov/sublime-expression
-- https://github.com/shagabutdinov/sublime-local-variable
+* [Statement](https://github.com/shagabutdinov/sublime-statement)
+* [Expression](https://github.com/shagabutdinov/sublime-expression)
+* [LocalVariable](https://github.com/shagabutdinov/sublime-local-variable)
