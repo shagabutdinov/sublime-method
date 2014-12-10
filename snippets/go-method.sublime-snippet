@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+func ($10) $name($args) {
+  $body$0
+}
+]]></content>
+  <scope>source.go</scope>
+  <description>Define go method</description>
+</snippet>

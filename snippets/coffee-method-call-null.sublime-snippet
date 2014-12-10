@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-$1 = @$name($args)
+$1 = $name($args)
 if $1 != null:
   ${result} = $1
 ]]></content>

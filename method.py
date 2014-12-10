@@ -11,8 +11,6 @@ except ImportError:
    "Method plugin for installation instructions; to disable this " +
    "message remove this plugin")
 
-
-
 indented_languages = ['python', 'coffee', 'saas']
 
 def extract_method(view, point):
