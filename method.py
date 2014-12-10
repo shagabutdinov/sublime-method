@@ -89,11 +89,7 @@ def _get_method_start(view, lines, name_range):
   start = view.text_point(start_line, start_col)
   body_start = name_range.b
   if '(' in lines[start_line]:
-    body_start_match = expression.find_match(view, body_start, r'\)',
-      {'range': [body_start, body_start + 512], 'nesting': 'end'})
-
-    if body_start_match != None:
-      body_start = body_start + body_start_match.end(0)
+    body_start = _skip_parenthesis_or_return_args(view, body_start)
 
   # check { or : right after body_start
   body_start_match = re.search(r'^\s*[{:]', view.substr(
@@ -107,6 +103,36 @@ def _get_method_start(view, lines, name_range):
     body_start + 64))).end(0)
 
   return start, body_start, _get_method_privacy(lines, start_line)
+
+def _skip_parenthesis_or_return_args(view, point):
+  new_point = point
+  while True:
+    new_point = _skip_parenthesis(view, point)
+    if new_point == point:
+      break
+
+    point = new_point
+
+  if 'source.go' in view.scope_name(point):
+    match = expression.find_match(view, point, r'{',
+      {'range': [point, point + 128]})
+    if match != None:
+      new_point += match.end(0)
+
+  return new_point
+
+def _skip_parenthesis(view, point):
+  if '(' not in view.substr(sublime.Region(point, view.line(point).b)):
+    return point
+
+  match = expression.find_match(view, point, r'\)',
+    {'range': [point, point + 512], 'nesting': 'end'})
+
+  if match == None:
+    return point
+
+  # print(view.substr(sublime.Region(point, match.end(0) + point)), match.end(0))
+  return match.end(0) + point
 
 def _get_method_end(view, lines, start, body_start):
   empty = re.search(r'^\s*(\}|end)', view.substr(sublime.Region(body_start,

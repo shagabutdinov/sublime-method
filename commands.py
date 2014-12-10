@@ -30,7 +30,8 @@ class MethodBase(sublime_plugin.TextCommand):
     return match.group(1)
 
   def _get_methods(self):
-    return parser.extract_methods(self.view)
+    methods = parser.extract_methods(self.view)
+    return methods
 
   def _get_method_regions(self, methods, index):
     return parser.get_regions(self.view, methods[index])

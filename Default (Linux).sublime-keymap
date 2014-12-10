@@ -279,6 +279,19 @@
       "file": "res://Packages/Method/leave_only_current_test.sublime-macro"
     },
     "context": [
+    {"key": "scope", "operator": "not_regex_contains", "operand": "source.go"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+q"],
+    "command": "run_macro_file",
+    "args": {
+      "file": "res://Packages/Method/leave_only_current_test_go.sublime-macro"
+    },
+    "context": [
+      {"key": "scope", "operator": "regex_contains", "operand": "source\\.go"},
       {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
     ]
   },

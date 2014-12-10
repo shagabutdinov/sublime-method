@@ -6,7 +6,7 @@
 	{
 		"args": {
 			"excepts": ["current"],
-			"methods": "/^test_/"
+			"methods": "/^(t|T)est/"
 		},
 		"command": "select_methods"
 	},
