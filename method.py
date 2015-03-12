@@ -129,7 +129,6 @@ def _skip_parenthesis(view, point):
   if match == None:
     return point
 
-  # print(view.substr(sublime.Region(point, match.end(0) + point)), match.end(0))
   return match.end(0) + point
 
 def _get_method_end(view, lines, start, body_start):

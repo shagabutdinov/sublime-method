@@ -2,7 +2,7 @@
 	<content><![CDATA[
 $name: function($args) {
   $body$0
-}
+},
 ]]></content>
 	<scope>source.js</scope>
 	<description>Define method</description>
