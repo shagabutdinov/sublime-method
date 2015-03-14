@@ -385,7 +385,8 @@ class MethodBase(sublime_plugin.TextCommand):
 
       if statement_1 == None or statement_2 == None:
         return None
-      if statement_1 != statement_2:
+      if statement_1 != statement_2 or expression.find_match(self.view,
+        statement_1[0], r'\{', {'range': statement_1, 'string': False}) != None:
         return 'body', [statement_1[0], statement_2[1]]
       else:
         return 'name', statement_1
