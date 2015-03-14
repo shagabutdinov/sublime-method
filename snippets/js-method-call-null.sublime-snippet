@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-$1 = this.$name($args)
+$1 = this.$name($args);
 if $1 != null:
   ${result} = $1
 ]]></content>
