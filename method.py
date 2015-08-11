@@ -13,11 +13,14 @@ except ImportError:
 
 indented_languages = ['python', 'coffee', 'saas']
 
-def extract_method(view, point):
+def extract_method(view, point = None):
+  if point == None:
+    point = view.sel()[0].begin()
+
   result = None
   for index, method in enumerate(extract_methods(view)):
     if point > method['start']:
-      result = (index, method)
+      result = method
 
   return result
 
@@ -26,11 +29,12 @@ def extract_methods(view):
   text = view.substr(sublime.Region(0, view.size()))
   lines = text.split("\n")
 
-  for word in view.find_by_selector('entity.name.function'):
+  for index, word in enumerate(view.find_by_selector('entity.name.function')):
     start, body_start, privacy = _get_method_start(view, lines, word)
     end, body_end = _get_method_end(view, lines, start, body_start)
 
     methods.append({
+      'index': index,
       'name': view.substr(word),
       'start': start,
       'end': end,
