@@ -6,10 +6,11 @@ from xml.dom import minidom
 
 try:
   from Expression import expression
-except ImportError:
+except ImportError as error:
   sublime.error_message("Dependency import failed; please read readme for " +
    "Method plugin for installation instructions; to disable this " +
-   "message remove this plugin. Missing Sublime Text plugin: Expression.")
+   "message remove this plugin; message: " + str(error))
+  raise error
 
 indented_languages = ['python', 'coffee', 'saas']
 
